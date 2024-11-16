@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 330px 540px; 
+  grid-gap: 20px; 
+  width: 900px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  width: 330px; 
+}
+
+.photo-panel {
+  display: flex;
+  background-position: center;
+  flex-direction: column;
+  justify-content: flex-start; 
+  background-color: #eee; 
+}
+
+.photo-image {
+  width: 100%;
+  height: 50%;
+}
+
+.text-content {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px; 
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.about-me, .contact-info {
+  margin-top: 20px;
+}
+
+.nccu-logo {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.about-me h3, .contact-info h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.about-me p, .contact-info p {
+  font-size: 16px;
+}
+
+.nccu-logo img {
+  width: 150px;
+  height: 50px;
+}
+
+.right-panel {
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+  align-items: stretch;
+  flex-wrap: nowrap;
+
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ccc ;
+  padding-bottom: 5px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.year {
+  font-weight: bold;
+}
+
+ul {
+  padding-left: 0;
+}
+
+
+ul li a {
+  text-decoration: none;
+  color: royalblue;
+  padding: 10px; 
+  display: block; 
+  margin-bottom: 5px; 
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+.music-images {
+  display: flex;
+  justify-content: space-between;
+}
+
+.music-item {
+  text-align: center;
+}
+
+.music-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.note p {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
+
+.nccu-logo {
+  margin-top: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+  .main-container {
+    grid-template-columns: 1fr; 
+    width: 100%;
+ 
